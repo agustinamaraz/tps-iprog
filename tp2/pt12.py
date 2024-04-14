@@ -33,7 +33,7 @@ if len(dia) != 3:
     print("mal formato de dia solo se permite (lun-mar-mie-jue-vie)")
     sys.exit()
 
-numeros_array =  fecha_array[1].split("/") #split divide a una cadena dado un separador "/", split devuelve un array con elementos que separo el "/"
+numeros_array =  fecha_array[1].split("/") #split divide a una cadena dado un separador "/", split devuelve un array con n elementos que separo el "/"
 
 dd,mm = numeros_array[0],numeros_array[1]
 
