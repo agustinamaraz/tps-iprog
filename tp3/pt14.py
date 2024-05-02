@@ -29,8 +29,8 @@ for i in range(1,cant_cliente+1):
             unidades=int(input("Ingrese unidades: "))
 
             if precio>0 and unidades>0:
-                importe = importe + precio*unidades
-                cant_unidades=cant_unidades+unidades
+                importe += precio*unidades
+                cant_unidades+=unidades
 
                 if cant_unidades >= 5:
                     total=total+(importe-importe*0.10)
@@ -46,10 +46,9 @@ for i in range(1,cant_cliente+1):
         else:
             band=False
 
-    print(f"El cliente que pagó el máximo importe es: {nro_orden}")
-    print(f"Total recaudado por el supermercado: {total_supermercado}")
-
-
     
+
+print(f"El cliente que pagó el máximo importe es: {nro_orden}")
+print(f"Total recaudado por el supermercado: {total_supermercado}")
 
 
