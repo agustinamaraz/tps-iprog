@@ -67,6 +67,7 @@ def calcular_promedio_columna(lista):
     return (total/len(lista))
 
 def menu():
+    lista = []
     while True:
         print("1. Generar Ternas")
         print("2. Mostrar la lista de valores generados")
@@ -82,8 +83,11 @@ def menu():
         elif (opcion == 2):
             mostrar(lista)
         elif (opcion == 3):
-            total = calcular_suma(lista)
-            print("la suma de todos es: ", total)
+            if not lista:
+                print("primero debe cargar la lista")
+            elif(lista):
+                total = calcular_suma(lista)
+                print("la suma de todos es: ", total)
         elif (opcion == 4):
             total = calcular_suma_terna(lista)
             print("la suma la terna eligda es: ", total)
