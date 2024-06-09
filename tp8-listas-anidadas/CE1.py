@@ -14,7 +14,7 @@ def generar_ternas():
     
     lista = []
 
-    for i in range(cant_ternas): 
+    for i in range(4): 
         lista_random = []
         j=0
         while j<3:
