@@ -139,7 +139,7 @@ def registrarse():
             break 
     
     while True:
-        email = input("ingresar email")
+        email = input("ingresar email: ")
         
         if validar_email(email):
             break
@@ -193,6 +193,6 @@ def login():
         print("usuario o clave incorrectos")
 
 #principals
-# registrarse()
-buscar_estudiante()
+registrarse()
+# buscar_estudiante()
 login()
