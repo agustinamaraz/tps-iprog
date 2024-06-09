@@ -25,6 +25,7 @@
 
 estudiantes = [
     ["44949820", "agustina26A", "agustina", "agus@com", "388-5056596"],
+    ["44949821", "agustina26A", "daianaagustina", "agus@com", "388-5056596"],
     ["45855525", "maxi26A", "maximiliano", "maxi@com", "3886-8888885"]
 ]
 
@@ -162,8 +163,13 @@ def buscar_estudiante():
             print(item)
     else:
         for item in estudiantes:
-            if item[2] == buscado:
+            #trae todas las coincidencias de nombres con el nombre dado
+            if item[2].find(buscado) != -1:
                 print(item)
+            
+            #solo trae a la persona que sse llame exactamente a la nombre dado    
+            # if item[2] == buscado:
+            #     print(item)
                 
                 
 # c. Ingresar (Login): debe solicitar el dni y la clave y verificar que coincida con algún estudiante registrado, si no
@@ -188,5 +194,5 @@ def login():
 
 #principals
 # registrarse()
-# buscar_estudiante()
+buscar_estudiante()
 login()
