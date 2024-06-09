@@ -36,3 +36,18 @@ if haynumero:
     
 else: 
     print("no hay numero")
+
+hayMayuscula = False    
+for i,item in enumerate(clave):
+    if item.isupper():
+        hayMayuscula=True
+        
+if hayMayuscula:
+    print("hay un mayuscula")
+else: 
+    print("no hay mayuscula")
+    
+if len(clave) <= 6:
+    print("La clave debe tener más de 6 caracteres.")
+else:
+    print("cuenta con los mas de 6 caracteres")
